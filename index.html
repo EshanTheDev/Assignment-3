@@ -30,7 +30,7 @@ font-family: 'Poppins', sans-serif;
 <body class=".lato">
     
 
-
+<!-- navbar started  -->
 
     <div class="navbar bg:hidden md:bg-[#F85559] lg:bg-[#F85559] container mx-auto rounded-full mt-10">
         <div class="navbar-start">
@@ -80,6 +80,282 @@ font-family: 'Poppins', sans-serif;
 
         </div>
       </div>
+
+<!-- navbar end  -->
+
+<!-- banner section start  -->
+
+<section class="container mx-auto mt-20 px-4 md:px-block ">
+
+
+  <div class="carousel w-full">
+
+
+
+    <div id="slide1" class="carousel-item relative w-full">
+      <img class="h-[500px] md:h-full" src="./images/banner1.png" alt="">
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide4" class="btn btn-circle">❮</a> 
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+
+<div class="space-y-7 absolute px-16 py-10 md:px-48 md:py-24 md:full md:h-[550px]">
+<h1 class="text-white text-5xl  md:text-6xl font-bold">Exotic tastes to your <br>Doorstep</h1>
+<p class="text-xl text-white">We Supply highly quality organic products</p>
+<button class="btn btn-error text-white">Buy Now</button>
+
+</div>
+
+
+
+    <div id="slide2" class="carousel-item relative w-full">
+      <img class="h-[500px] md:h-full" src="./images/banner2.png" alt="">
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide1" class="btn btn-circle">❮</a> 
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide3" class="carousel-item relative w-full">
+      <img class="h-[500px] md:h-full" src="./images/banner3.png" alt="">
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide2" class="btn btn-circle">❮</a> 
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <div id="slide4" class="carousel-item relative w-full">
+      <img class="h-[500px] md:h-full" src="./images/banner4.png" alt="">
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide3" class="btn btn-circle">❮</a> 
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</section>
+
+
+<!-- deal of the day  -->
+
+<main>
+
+
+<section class="flex flex-col md:flex-row container mx-auto gap-20 mt-12 justify-between">
+
+  <div class="flex-1">
+    <h1 class="text-3xl font-bold">Deal Of The day</h1>
+    <p class="text-xl">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+  </div>
+  <div>
+
+    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+      <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:15;"></span>
+        </span>
+        days
+      </div> 
+      <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:10;"></span>
+        </span>
+        hours
+      </div> 
+      <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:24;"></span>
+        </span>
+        min
+      </div> 
+      <div class="flex flex-col p-2 bg-neutral rounded-box text-neutral-content">
+        <span class="countdown font-mono text-5xl">
+          <span style="--value:50;"></span>
+        </span>
+        sec
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section class="container mx-auto mt-20 grid grid-cols-1 md:grid-cols-4 gap-4">
+
+
+  <div class="card bg-base-100 shadow-xl">
+    <div class="card-body items-center space-y-7">
+    <img class="w-48" src="./images/fruit6.png" alt="">
+      <p class="font-bold text-center">12.90$-18.85$</p> <hr>
+      <p class="text-xl">Apple </p>
+      <div class="card-actions justify-end">
+        <div class="rating rating-md">
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"  />
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked/>
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+        </div>
+      </div>
+    </div>
+
+<!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_2.showModal()">Details</button>
+<dialog id="my_modal_2" class="modal">
+  <form method="dialog" class="modal-box">
+   <img src="./images/fruit7.png" alt="">
+
+   <h3>Dragon Fruit</h3>
+   <p>Our Signature Items</p>
+   <div class="rating rating-md">
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"  />
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked/>
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+  </div>
+
+  </form>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+
+  </div>
+  <div class="card bg-base-100 shadow-xl">
+    <div class="card-body items-center space-y-7">
+    <img class="w-48 " src="./images/fruit7.png" alt="">
+      <p class="font-bold text-center">12.90$-18.85$</p> <hr>
+      <p class="text-xl">Orange </p>
+      <div class="card-actions justify-end">
+        <div class="rating rating-md">
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"  />
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked/>
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+        </div>
+      </div>
+    </div>
+
+<!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_2.showModal()">Details</button>
+<dialog id="my_modal_2" class="modal">
+  <form method="dialog" class="modal-box">
+   <img src="./images/fruit8.png" alt="">
+
+   <h3>orange</h3>
+   <p>Our Signature Items</p>
+   <div class="rating rating-md">
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"  />
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked/>
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+  </div>
+
+  </form>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+
+  </div>
+  <div class="card bg-base-100 shadow-xl">
+    <div class="card-body items-center space-y-7">
+    <img class="w-48" src="./images/fruit8.png" alt="">
+      <p class="font-bold text-center">12.90$-18.85$</p> <hr>
+      <p class="text-xl">Dragonh Fruit </p>
+      <div class="card-actions justify-end">
+        <div class="rating rating-md">
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"  />
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked/>
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+        </div>
+      </div>
+    </div>
+
+<!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_2.showModal()">Details</button>
+<dialog id="my_modal_2" class="modal">
+  <form method="dialog" class="modal-box">
+   <img src="./images/fruit7.png" alt="">
+
+   <h3>Dragon Fruit</h3>
+   <p>Our Signature Items</p>
+   <div class="rating rating-md">
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"  />
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked/>
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+  </div>
+
+  </form>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+
+  </div>
+  <div class="card bg-base-100 shadow-xl">
+    <div class="card-body items-center space-y-7">
+    <img class="w-48" src="./images/fruit9.png" alt="">
+      <p class="font-bold text-center">12.90$-18.85$</p> <hr>
+      <p class="text-xl">Banana</p>
+      <div class="card-actions justify-end">
+        <div class="rating rating-md">
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"  />
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked/>
+          <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+        </div>
+      </div>
+    </div>
+
+<!-- Open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_2.showModal()">Details</button>
+<dialog id="my_modal_2" class="modal">
+  <form method="dialog" class="modal-box">
+   <img src="./images/fruit6.png" alt="">
+
+   <h3>Apple</h3>
+   <p>Our Signature Items</p>
+   <div class="rating rating-md">
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400"  />
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" checked/>
+    <input type="radio" name="rating-7" class="mask mask-star-2 bg-orange-400" />
+  </div>
+
+  </form>
+  <form method="dialog" class="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>
+
+
+  </div>
+
+
+</section>
+
+</main>
+
+
+
+
 
 
 
